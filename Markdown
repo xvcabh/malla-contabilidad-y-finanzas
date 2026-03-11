@@ -1,0 +1,35 @@
+# 📊 Malla Interactiva – Contabilidad y Finanzas
+
+```mermaid
+graph TD
+
+%% CICLO 1
+HU543["Comprensión y Producción de Lenguaje I"]
+MA384["Fundamentos para el Cálculo"]
+CB03["Fundamentos de Economía"]
+AF103["Fundamentos de las Finanzas"]
+CB02["Introducción a la Contabilidad"]
+
+%% CICLO 2
+MA459["Cálculo"]
+HU544["Comprensión y Producción de Lenguaje II"]
+CB04["Contabilidad Básica"]
+AF133["Macroeconomía"]
+
+%% CICLO 3
+MA460["Estadística Descriptiva"]
+CB07["Contabilidad Intermedia"]
+CB06["Matemática Financiera"]
+CB05["Fundamentos de la Gerencia"]
+
+%% REQUISITOS
+
+MA384 --> MA459
+HU543 --> HU544
+CB02 --> CB04
+CB03 --> AF133
+
+MA459 --> MA460
+CB04 --> CB07
+AF103 --> CB06
+AF103 --> CB05
